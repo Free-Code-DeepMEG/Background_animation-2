@@ -143,6 +143,26 @@ body{
 }
 
 .colorBox:hover{
-    background: rgb(4, 229, 4);
+    background: rgb(5, 227, 5);
     transition-duration: 0s;
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgb(3, 114, 3);
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+    0%{
+        top:-60px;
+    }
+    100%{
+        top: 120%
+    }
 }
